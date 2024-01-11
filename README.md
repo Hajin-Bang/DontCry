@@ -1,4 +1,4 @@
-![profile](https://github.com/Hajin-Bang/DontCry/assets/125885922/adbc5602-09f5-4076-859c-81debc4fbc1b)# Don't Cry
+# Don't Cry
 
 눈물 참고 알고리즘 스터디 👯‍♀️
 
