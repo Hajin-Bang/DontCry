@@ -25,19 +25,18 @@ console.log(solution(24, 27));
 
 
 // 다른 사람의 풀이
-function solution(left, right) {
-  let answer = 0;
-  
-  for(let i = left; i <= right; i++) {
-      // 제곱근이 정수면 약수의 개수가 홀수
-      if(Number.isInteger(Math.sqrt(i))) {
-          answer -= i;
-      } else {
-          answer += i;
-      }
-  }
-  return answer;
-}
+// function solution(left, right) {
+//   let answer = 0;
+//   for(let i = left; i <= right; i++) {
+//       // 제곱근이 정수면 약수의 개수가 홀수
+//       if(Number.isInteger(Math.sqrt(i))) {
+//           answer -= i;
+//       } else {
+//           answer += i;
+//       }
+//   }
+//   return answer;
+// }
 
 // Math.sqrt(number) => 주어진 숫자(number)에 루트를 씌워 제곱근 반환. 숫자가 음수이면 NaN 반환.
 // Number.isInteger(value) => 주어진 값(value)이 정수인지 판별. 정수면 true, 아니면 false 반환.
