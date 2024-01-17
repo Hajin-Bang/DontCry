@@ -17,3 +17,6 @@ function solution(arr) {
   }
   return answer;
 }
+
+// indexOf는 요소를 찾을 수 있는 첫 번째 인덱스를 반환, indexOf(1,1)은 첫번째 1을 찾아 인덱스를 반환
+// splice 제거하거나 추가 변경하여 배열의 내용을 변경, splice(3)은 3번 인덱스포함 그 이후 삭제

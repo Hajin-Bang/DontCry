@@ -16,3 +16,6 @@ function solution(s) {
   }
   return answer;
 }
+
+// s === result는 문자열과 숫자를 비교하므로, 실제로 s가 숫자로만 구성되어 있더라도 항상 false를 반환합니다.
+// 문자열 s에 숫자가 아닌 문자가 포함되어 있어도, parseInt는 숫자 부분만 반환하므로, s === result는 false를 반환합니다.
