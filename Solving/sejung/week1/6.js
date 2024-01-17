@@ -13,9 +13,9 @@
 
 function solution(s) {
     let arr = s.toLowerCase().split(' ');
-    return arr.map(letter => 
-            letter.length > 0 
-            ? letter[0].toUpperCase() + letter.slice(1)
+    return arr.map(word => 
+            word.length > 0 
+            ? word[0].toUpperCase() + word.slice(1)
             : null)
             .join(' ');
 };
@@ -24,8 +24,8 @@ console.log(solution("3people unFollowed me"));
 console.log(solution("for the last week"));
 console.log(solution("  for the what 1what  "));
 
-// 테스)트 케이스 추가: "  for the what 1what  "
-// 공백문자가 연속해서 나올 경우 item[0]은 undefined가 될 수 있으며, 이를 toUpperCase() 메소드로 변환하려고 하면 런타임 에러(타입 에러) 발생
+// 테스트 케이스 추가: "  for the what 1what  "
+// 공백문자가 연속해서 나올 경우 word[0]은 undefined가 될 수 있으며, 이를 toUpperCase() 메소드로 변환하려고 하면 런타임 에러(타입 에러) 발생
 // 문자열이 비어있는지 확인하고, 각 단어의 첫 문자가 실제로 존재하는지 확인하는 로직을 추가
 
 // str.slice(beginIdx, EndIdx): 문자열의 일부를 추출하면서 새로운 문자열 반환. EndIdx가 생략된다면, slice()는 문자열 마지막까지 추출
