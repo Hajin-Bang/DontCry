@@ -13,3 +13,5 @@ function solution(s) {
 
 console.log(solution("abcde"));
 console.log(solution("qwer"));
+
+// Math.floor(): 주어진 숫자와 같거나 작은 정수 중에서 가장 큰 수 반환 => 내림
