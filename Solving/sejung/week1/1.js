@@ -16,3 +16,5 @@ function solution(arr) {
 
 console.log(solution([4, 3, 2, 1]));
 console.log(solution([10]));
+
+// array.filter(): 배열에서 주어진 함수의 테스트를 통과하는 요소로만 필터링. 얕은 복사본(원본에 영향) 생성
