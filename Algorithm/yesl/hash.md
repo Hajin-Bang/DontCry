@@ -68,6 +68,7 @@
 - 이때 바꾸는데 오버헤드가 있어서 기준이 6과 8이 되는 것이다.
 
 <img width="300" alt="Separating Chaining - Linked list" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Hash_table_5_0_1_1_1_1_1_LL.svg/900px-Hash_table_5_0_1_1_1_1_1_LL.svg.png">
+
 <Separating Chaining - Linked list>
 
 - LinkedList를 사용할 경우, 인덱스 충돌이 났을 때 인덱스가 가리키고 있는 LinkedList에 노드를 추가하여 삽입한다.
@@ -93,6 +94,7 @@
 - Linear Probing, Quadratic Probing, Double hashing등이 있다.
 
 <img width="300" alt="Separating Chaining - Linked list" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Hash_table_5_0_1_1_1_1_0_SP.svg/760px-Hash_table_5_0_1_1_1_1_0_SP.svg.png">
+
 <Open addressing - Linear Probing>
 
 - 인덱스가 중복되는 충돌이 발생할 때 인덱스 뒤에 있는 버킷 중 빈 버킷을 찾아 데이터를 삽입한다.
