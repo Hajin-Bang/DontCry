@@ -7,7 +7,7 @@ completion의 길이는 participant의 길이보다 1 작습니다.
 참가자의 이름은 1개 이상 20개 이하의 알파벳 소문자로 이루어져 있습니다.
 ⭐️⭐️⭐️참가자 중에는 동명이인이 있을 수 있습니다. */
 
-// ------------답1---------------
+// ------------답1 (sort를 이용한 풀이)---------------
 function solution(participant, completion) {
   participant.sort();
   completion.sort();
@@ -21,7 +21,13 @@ function solution(participant, completion) {
 여기서, participant.sort()와 completion.sort() 모두 O(nlogn)의 시간이 소요되기 때문에 좋은 풀이라고 볼 수는 없다.
 */
 
-// ------------답2---------------
+// **첫번째 시도한 오답
+// 문제: 참가자 중에 동명이인이 있을 경우 하나의 문자로 판단하여 오류가 난다.
+function solution(participant, completion) {
+  return participant.filter((x) => !completion.includes(x)).toString();
+}
+
+// ------------답2 (Object를 이용한 풀이)---------------
 function solution(participant, completion) {
   const hash = {};
 
@@ -44,15 +50,52 @@ function solution(participant, completion) {
     }
   }
 }
-/* 
-1. Hash Map을 만든다. (key: 이름, value: count)
-2. completion에 존재하는 선수들의 Hash를 뺀다.
-3. value가 남아있는 선수가 완주하지 못한 선수이다. 
-*/
 
-//
-// **첫번째 시도한 오답
-// 문제: 참가자 중에 동명이인이 있을 경우 하나의 문자로 판단하여 오류가 난다.
+// ------------답3 (HashMap을 이용한 풀이)---------------
 function solution(participant, completion) {
-  return participant.filter((x) => !completion.includes(x)).toString();
+  const participantMap = new Map();
+  // 'participant' 배열의 각 요소를 key로 하고, 해당 요소의 출현 횟수를 value로 하는 해시맵
+
+  // 참가자 목록을 해시맵에 추가
+  for (let name of participant) {
+    // participant 배열의 각 요소를 순회하면서 'name' 변수에 할당한다
+    participantMap.set(name, (participantMap.get(name) || 0) + 1);
+    // name이 있을 때: 그 값을 반환한 뒤 + 1
+    // name이 없을 때: 0을 반환한 뒤 + 1
+  }
+
+  // 완주자 목록에서 참가자를 제외
+  for (let name of completion) {
+    participantMap.set(name, participantMap.get(name) - 1);
+    if (participantMap.get(name) === 0) {
+      participantMap.delete(name);
+    } // 1씩 감소한 결과 인원수가 0이 되었다면, 해당 참가자를 해시맵에서 삭제
+  }
+
+  // 해시맵에 남아있는 참가자 확인
+  const answer = [...participantMap.keys()][0];
+  return answer;
+}
+
+//////////////////////////////////////////////////////////////////////////////////
+// 천재같은 사람이 너무 많은 경우
+// 흑흑...
+// ....
+// 내는 못한다
+function solution(participant, completion) {
+  const map = new Map();
+
+  for (let i = 0; i < participant.length; i++) {
+    let a = participant[i],
+      b = completion[i];
+
+    map.set(a, (map.get(a) || 0) + 1);
+    map.set(b, (map.get(b) || 0) - 1);
+  }
+
+  for (let [k, v] of map) {
+    if (v > 0) return k;
+  }
+
+  return "nothing";
 }
