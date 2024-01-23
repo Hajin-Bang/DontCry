@@ -34,12 +34,26 @@ function solution(clothes) {
   return answer - 1;
 }
 
-// 구글링 없이 어떻게 풀지
-// for of를 이용해서 풀면 되는구나 .............
-for (const [name, type] of clothes) {
-  if (!clothesMap[type]) {
-    clothesMap[type] = 1;
-  } else {
-    clothesMap[type]++;
+// 각 의상의 종류에 따라 몇가지 선택지가 있는지 계산한다.
+// 각 종류별로 선택했을 때의 경우의 수를 모두 곱한다.
+
+// 답2
+function solution(clothes) {
+  const clothesMap = new Map();
+
+  for (const [name, type] of clothes) {
+    clothesMap.set(type, (clothesMap.get(type) || 0) + 1);
+    // 아무 의상도 선택하지 않은 것을 포함하기 위해 +1
   }
+
+  let answer = 1;
+  for (let count of clothesMap.values()) {
+    answer *= count + 1;
+    // 아무 의상도 선택하지 않은 것을 포함하기 위해 +1
+  }
+
+  // 아무 의상도 선택하지 않은 경우 제외
+  return answer - 1;
 }
+
+// 구글링 없이 어떻게 풀지
