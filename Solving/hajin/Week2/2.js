@@ -17,35 +17,18 @@
 N마리 폰켓몬의 종류 번호가 담긴 배열 nums가 매개변수로 주어질 때, N/2마리의 폰켓몬을 선택하는 방법 중, 가장 많은 종류의 폰켓몬을 선택하는 방법을 찾아, 
 그때의 폰켓몬 종류 번호의 개수를 return 하도록 solution 함수를 완성해주세요. */
 
-// 답
+// ------------답1---------------
 function solution(nums) {
   let maxLength = Math.floor(nums.length / 2);
   let newNums = [...new Set(nums)].length;
 
   return newNums < maxLength ? newNums : maxLength;
 }
-// 구글링함
-// set객체 : 중복되지 않는 값들의 집합
+
 // 선택할 수 있는 폰켓몬의 최대 개수(maxLength)와 중복을 제거한 종류의 개수(maxLength)를 비교
-
-// 답2
-function solution(nums) {
-  const hash = {};
-
-  for (let num of nums) {
-    hash[num] = (hash[num] || 0) + 1;
-  }
-
-  let maxLength = nums.length / 2;
-  let count = 0;
-
-  for (let key in hash) {
-    count++;
-    if (count === maxLength) {
-      break;
-    }
-  }
-
-  return count;
-}
-// 굳이 해시로 풀지 않아도 될 것 같은 문제
+// 구글링함
+// set: javaScript에서 제공하는 내장 객체로, 중복된 값을 허용하지 않음
+// 배열 등에서 중복된 값을 제거하고자 할 때 유용
+let newNums = [...new Set(nums)].length;
+// Set(nums): 배열 num의 모든 값을 포함하는 새로운 set 객체를 생성
+// [...new Set(nums)]: Set객체를 배열로 변환 => 중복된 값이 제거된 배열이 생성됨
