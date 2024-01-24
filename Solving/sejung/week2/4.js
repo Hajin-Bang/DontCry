@@ -42,6 +42,7 @@
 //     return answer - 1; // 모든 옵션의 조합 중에서 아무것도 선택하지 않는 경우 제외
 // }
 
+// 개선된 풀이
 function solution(clothes) {
   let clothesMap = new Map();
   
@@ -66,3 +67,6 @@ function solution(clothes) {
 // object.set(key, value): 객체에 주어진 키와 값을 연결하여 저장. 해당 키가 이미 존재하면 그 키 값을 새로운 값으로 업데이트
 // object.get(key): 주어진 키에 대응하는 값을 반환.
 // object.values(obj): 파라미터 객체가 가지는 속성의 값들로 이루어진 배열을 리턴.
+
+console.log(solution([["yellow_hat", "headgear"], ["blue_sunglasses", "eyewear"], ["green_turban", "headgear"]]));
+console.log(solution([["crow_mask", "face"], ["blue_sunglasses", "face"], ["smoky_makeup", "face"]]));
