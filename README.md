@@ -75,11 +75,29 @@
 <b style="font-size:17px">2024.01.22</b><br/>
 **<해시 공부하기>**
 
-- **알고리즘 개념 정리**
-  - 해시
+- **해시 알고리즘 개념 정리**
+
+  - 예슬: https://github.com/Hajin-Bang/DontCry/blob/main/Algorithm/yesl/hash.md
+  - 세정: https://github.com/Hajin-Bang/DontCry/blob/main/Algorithm/sejung/hash.md
+  - 하진: https://github.com/Hajin-Bang/DontCry/blob/main/Algorithm/hajin/hash.md
+
 - **공통문제 4문제 (Lv1 2문제 + Lv2 2문제)**
   - lv1. 완주하지 못한 선수
   - lv1. 포켓몬
   - lv2. 전화번호 목록
   - lv2. 의상
+  </details>
+
+<details><summary><b>3주차</b></summary>
+<br/>
+
+<b style="font-size:17px">2024.01.22</b><br/>
+**<정렬 공부하기>**
+
+- **알고리즘 개념 정리**
+  - 정렬
+- **공통문제 3문제 (Lv1 1문제 + Lv2 2문제)**
+  - lv1. K번째 수
+  - lv2. 가장 큰 수
+  - lv2. H-Index
   </details>
