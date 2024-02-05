@@ -91,13 +91,33 @@
 <details><summary><b>3주차</b></summary>
 <br/>
 
-<b style="font-size:17px">2024.01.22</b><br/>
+<b style="font-size:17px">2024.02.05</b><br/>
 **<정렬 공부하기>**
 
-- **알고리즘 개념 정리**
-  - 정렬
+- **해시 알고리즘 개념 정리**
+
+  - 예슬: https://github.com/Hajin-Bang/DontCry/blob/yesl/Algorithm/yesl/sorting.md
+  - 세정: https://github.com/Hajin-Bang/DontCry/blob/sejung/Algorithm/sejung/sort.md
+  - 하진: https://github.com/Hajin-Bang/DontCry/blob/hajin/Algorithm/hajin/sort.md
+
 - **공통문제 3문제 (Lv1 1문제 + Lv2 2문제)**
   - lv1. K번째 수
   - lv2. 가장 큰 수
   - lv2. H-Index
+  </details>
+
+<details><summary><b>4주차</b></summary>
+<br/>
+
+<b style="font-size:17px">2024.02.14</b><br/>
+**<스택/큐 공부하기>**
+
+- **스택/큐 알고리즘 개념 정리**
+
+- **공통문제 3문제 (Lv1 1문제 + Lv2 2문제)**
+  - lv2. 기능개발
+  - lv2. 올바른 괄호
+  - lv2. 프로세스
+  - lv2. 다리를 지나는 트럭
+  - lv2. 주식가격
   </details>
