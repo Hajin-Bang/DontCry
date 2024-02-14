@@ -94,7 +94,7 @@
 <b style="font-size:17px">2024.02.05</b><br/>
 **<정렬 공부하기>**
 
-- **해시 알고리즘 개념 정리**
+- **정렬 알고리즘 개념 정리**
 
   - 예슬: https://github.com/Hajin-Bang/DontCry/blob/yesl/Algorithm/yesl/sorting.md
   - 세정: https://github.com/Hajin-Bang/DontCry/blob/sejung/Algorithm/sejung/sort.md
@@ -114,10 +114,30 @@
 
 - **스택/큐 알고리즘 개념 정리**
 
+  - 예슬: https://github.com/Hajin-Bang/DontCry/blob/main/Algorithm/yesl/stack%26queue.md
+  - 세정: https://github.com/Hajin-Bang/DontCry/blob/main/Algorithm/sejung/Stack%26Queue.md
+  - 하진: https://github.com/Hajin-Bang/DontCry/blob/main/Algorithm/hajin/stack%26queue.md
+
 - **공통문제 5문제 (Lv2 5문제)**
   - lv2. 기능개발
   - lv2. 올바른 괄호
   - lv2. 프로세스
   - lv2. 다리를 지나는 트럭
   - lv2. 주식가격
+  </details>
+
+<details><summary><b>5주차</b></summary>
+<br/>
+
+<b style="font-size:17px">2024.02.21</b><br/>
+**<완전탐색 공부하기>**
+
+- **완전탐색 알고리즘 개념 정리**
+
+- **공통문제 5문제 (Lv2 5문제)**
+  - lv2. 소수 찾기
+  - lv2. 카펫
+  - lv2. 피로도
+  - lv2. 전력망을 둘로 나누기
+  - lv2. 모음사전
   </details>
