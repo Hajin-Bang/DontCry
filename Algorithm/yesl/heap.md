@@ -47,13 +47,13 @@
   >   - 오른쪽 자식의 인덱스는 부모의 인덱스 \* 2 + 1
   >   - 부모의 인덱스는 자식의 인덱스 - 1 / 2
 
-<img width="300" alt="힙의 특징" src="https://velog.velcdn.com/images%2Fhanif%2Fpost%2F7196a293-54aa-45d5-90fb-8ef831c92ad2%2Fimage.png">
+<img width="500" alt="힙의 특징" src="https://velog.velcdn.com/images%2Fhanif%2Fpost%2F7196a293-54aa-45d5-90fb-8ef831c92ad2%2Fimage.png">
 
 ### 힙의 연산
 
 1. 삽입
 
-<img width="300" alt="힙의 삽입" src="https://velog.velcdn.com/images%2Fhanif%2Fpost%2Fc98b091f-538c-47f5-a955-5ea38967321b%2Fimage.png">
+<img width="500" alt="힙의 삽입" src="https://velog.velcdn.com/images%2Fhanif%2Fpost%2Fc98b091f-538c-47f5-a955-5ea38967321b%2Fimage.png">
 
 1.  이진트리의 맨 마지막에 데이터를 추가한다.
 2.  최대 힙 기준 맨 마지막에 삽입한 노드와 부모 노드를 비교한다.
@@ -64,7 +64,7 @@
 
 2. 삭제
 
-<img width="300" alt="힙의 삭제" src="https://velog.velcdn.com/images%2Fhanif%2Fpost%2Fd4eb5fea-e7a7-428b-97b4-cbb331955f25%2Fimage.png">
+<img width="500" alt="힙의 삭제" src="https://velog.velcdn.com/images%2Fhanif%2Fpost%2Fd4eb5fea-e7a7-428b-97b4-cbb331955f25%2Fimage.png">
 
 1.  이진트리의 루트노드 데이터를 삭제한다.
 2.  현재 트리에서 가장 마지막에 있는 데이터를 루트 노드로 올린다.
