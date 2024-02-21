@@ -123,3 +123,110 @@ function solution(jobs) {
 
   return (total / count) >> 0; // 모든 작업의 완료 시간의 합을 작업의 총 개수로 나눈 후, 소수점 이하를 버리기 위해 비트 우측 이동 연산자(>>)를 사용하여 정수 결과를 반환
 }
+
+class MinHeap {
+  constructor() {
+    this.heap = [];
+  }
+
+  // 힙에 요소를 추가합니다.
+  push(element) {
+    this.heap.push(element);
+    this.heapifyUp(this.heap.length - 1);
+  }
+
+  // 힙에서 가장 작은 요소를 제거하고 반환합니다.
+  pop() {
+    const minValue = this.heap[0];
+    const lastValue = this.heap.pop();
+    if (this.heap.length > 0) {
+      this.heap[0] = lastValue;
+      this.heapifyDown(0);
+    }
+    return minValue;
+  }
+
+  // 힙이 비어 있는지 확인합니다.
+  isEmpty() {
+    return this.heap.length === 0;
+  }
+
+  // 부모 노드로 거슬러 올라가면서 힙을 재정렬합니다.
+  heapifyUp(index) {
+    let currentIndex = index;
+    let parentIndex = Math.floor((currentIndex - 1) / 2);
+    while (
+      currentIndex > 0 &&
+      this.heap[currentIndex][1] < this.heap[parentIndex][1]
+    ) {
+      [this.heap[currentIndex], this.heap[parentIndex]] = [
+        this.heap[parentIndex],
+        this.heap[currentIndex],
+      ];
+      currentIndex = parentIndex;
+      parentIndex = Math.floor((currentIndex - 1) / 2);
+    }
+  }
+
+  // 자식 노드로 내려가면서 힙을 재정렬합니다.
+  heapifyDown(index) {
+    let currentIndex = index;
+    const length = this.heap.length;
+    const leftChildIndex = 2 * currentIndex + 1;
+    const rightChildIndex = 2 * currentIndex + 2;
+
+    let smallestIndex = currentIndex;
+    if (
+      leftChildIndex < length &&
+      this.heap[leftChildIndex][1] < this.heap[smallestIndex][1]
+    ) {
+      smallestIndex = leftChildIndex;
+    }
+
+    if (
+      rightChildIndex < length &&
+      this.heap[rightChildIndex][1] < this.heap[smallestIndex][1]
+    ) {
+      smallestIndex = rightChildIndex;
+    }
+
+    if (smallestIndex !== currentIndex) {
+      [this.heap[currentIndex], this.heap[smallestIndex]] = [
+        this.heap[smallestIndex],
+        this.heap[currentIndex],
+      ];
+      this.heapifyDown(smallestIndex);
+    }
+  }
+}
+
+function solution(jobs) {
+  let currentTime = 0; // 현재 시간
+  let totalWaitTime = 0; // 총 대기 시간
+  let jobsDone = 0; // 처리 완료된 작업 수
+  let jobsIndex = 0; // jobs 배열
+
+  jobs.sort((a, b) => a[0] - b[0]);
+
+  const minHeap = new MinHeap();
+
+  while (jobsDone < jobs.length) {
+    // 현재 시간 이전에 요청된 모든 작업을 최소 힙에 추가
+    while (jobsIndex < jobs.length && jobs[jobsIndex][0] <= currentTime) {
+      minHeap.push(jobs[jobsIndex++]);
+    }
+
+    // 만약 현재 처리할 수 있는 작업이 없다면, 다음 작업의 요청 시간으로 현재 시간을 업데이트
+    if (minHeap.isEmpty()) {
+      currentTime = jobs[jobsIndex][0];
+    } else {
+      // 힙에서 가장 짧은 작업을 꺼내 처리. 이 작업의 시작 시간과 처리 시간을 사용해 대기 시간을 계산
+      const [start, duration] = minHeap.pop();
+      currentTime += duration; // 현재 시간 업데이트
+      totalWaitTime += currentTime - start; // 총 대기 시간에 이 작업의 대기 시간을 추가
+      jobsDone++; // 처리 완료된 작업 수를 증가
+    }
+  }
+
+  return Math.floor(totalWaitTime / jobs.length);
+}
