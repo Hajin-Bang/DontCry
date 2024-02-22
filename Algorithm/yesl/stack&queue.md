@@ -16,8 +16,7 @@
 > 1. LIFO(Last in First Out) : 마지막에 들어온 데이터가 먼저 나가는 데이터 구조
 > 2. FILO(First in Last Out) : 처음 들어온 데이터가 마지막에 나가는 데이터 구조
 
-<img width="300" alt="스택" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F70Ehc%2Fbtsc1O7ftVg%2FIMSS4Vdv4bN3PbekEDKoz0%2Fimg.png
-">
+<img width="300" alt="스택" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F70Ehc%2Fbtsc1O7ftVg%2FIMSS4Vdv4bN3PbekEDKoz0%2Fimg.png">
 
 ### 메서드
 
@@ -78,8 +77,7 @@
 - 큐의 한 쪽 끝(Rear)에서는 데이터 삽입만 가능하며, 다른 한 쪽 끝(Front)에서는 데이터 삭제만 가능하다.
 - 큐에서 데이터가 추가되는 것을 Enqueue, 데이터가 삭제되는 것을 Dequeue라고 한다.
 
-<img width="300" alt="큐" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbvSYuo%2FbtscY4pXnhy%2FKVaZDLK6JbgNsFTdXQMpx1%2Fimg.png
-">
+<img width="300" alt="큐" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbvSYuo%2FbtscY4pXnhy%2FKVaZDLK6JbgNsFTdXQMpx1%2Fimg.png">
 
 ### 메서드
 
@@ -137,8 +135,7 @@
 - 큐의 형태가 원형으로 되어 있어 원형 큐라고 한다.
 - 원형 큐는 처음과 끝이 연결되어 있는 형태로, 데이터가 배열의 끝에 다다르면 다시 처음으로 돌아올 수 있어 이미 사용했던 부분도 재사용이 가능하다.
 
-<img width="300" alt="원형 큐" src="https://user-images.githubusercontent.com/52641909/111613749-3090e580-8822-11eb-9c9b-b53a674614fb.png
-">
+<img width="300" alt="원형 큐" src="https://user-images.githubusercontent.com/52641909/111613749-3090e580-8822-11eb-9c9b-b53a674614fb.png">
 
 **장점**
 
