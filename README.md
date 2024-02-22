@@ -130,14 +130,30 @@
 <br/>
 
 <b style="font-size:17px">2024.02.21</b><br/>
-**<완전탐색 공부하기>**
+**<힙 공부하기>**
 
-- **완전탐색 알고리즘 개념 정리**
+- **힙 알고리즘 개념 정리**
 
-- **공통문제 5문제 (Lv2 5문제)**
-  - lv2. 소수 찾기
-  - lv2. 카펫
-  - lv2. 피로도
-  - lv2. 전력망을 둘로 나누기
-  - lv2. 모음사전
+  - 예슬: https://github.com/Hajin-Bang/DontCry/blob/main/Algorithm/yesl/heap.md
+  - 세정: https://github.com/Hajin-Bang/DontCry/blob/main/Algorithm/sejung/Heap.md
+  - 하진: https://github.com/Hajin-Bang/DontCry/blob/main/Algorithm/hajin/heap.md
+
+- **공통문제 3문제 (Lv2 1문제, Lv3 2문제)**
+  - lv2. 더 맵게
+  - lv3. 디스크 컨트롤러
+  - lv3. 이중우선순위큐
+  </details>
+
+<details><summary><b>6주차</b></summary>
+<br/>
+
+<b style="font-size:17px">2024.02.28</b><br/>
+**<깊이/너비 우선탐색 공부하기>**
+
+- **깊이/너비 우선탐색 알고리즘 개념 정리**
+
+- **공통문제 3문제 (Lv2 2문제, Lv3 1문제)**
+  - lv2. 타겟 넘버
+  - lv3. 네트워크
+  - lv2. 게임 맵 최단거리
   </details>
