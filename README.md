@@ -152,8 +152,24 @@
 
 - **깊이/너비 우선탐색 알고리즘 개념 정리**
 
+  - 예슬: https://github.com/Hajin-Bang/DontCry/blob/main/Algorithm/yesl/dfs&bfs.md
+  - 하진: https://github.com/Hajin-Bang/DontCry/blob/main/Algorithm/hajin/dfs&bfs.md
+
 - **공통문제 3문제 (Lv2 2문제, Lv3 1문제)**
   - lv2. 타겟 넘버
   - lv3. 네트워크
   - lv2. 게임 맵 최단거리
+  </details>
+
+<details><summary><b>7주차</b></summary>
+<br/>
+
+<b style="font-size:17px">2024.03.06</b><br/>
+**<깊이/너비 우선탐색 공부하기>**
+
+- **공통문제 4문제 (Lv3 4문제)**
+  - lv3. 단어 변환
+  - lv3. 아이템 줍기
+  - lv3. 여행경로
+  - lv3. 퍼즐 조각 채우기
   </details>
